@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ehsan's Tech Blog</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="py-3 header-border">
+        <div class="justify-content-center px-5">
+          <h1 class="text-center" id="main-header">Ehsan's Tech Blog</h1>
+        </div>
+        <div class="justify-content-center px-5">
+          <nav class="text-center" id="main-nav">
+            <a href="/" class="px-1">HOME</a>
+            <a href="/dashboard" class="px-2">DASHBOARD</a>
+            {{#if loggedIn}}
+              <button id="logout" class="btn btn-link py-0">LOGOUT</button>
+            {{else}}
+              <a href="/login" class="px-1">LOGIN</a>
+            {{/if}}
+          </nav>
+        </div>
+      </header>
+      <main class="mt-4">
+        {{{body}}}
+      </main>
+    </div>
+    {{#if loggedIn}}
+      <script src="/javascript/logout.js"></script>
+    {{/if}}
+  </body>
+</html>

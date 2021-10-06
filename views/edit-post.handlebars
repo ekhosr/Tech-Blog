@@ -1,0 +1,47 @@
+<section class="update-post-container">
+  <div class="d-flex justify-content-center">
+    <form class="card edit-post-form">
+      <div class="card-header" id="login-header">
+        <h5 class="mb-0">EDIT POST</h5>
+      </div>
+      <div class="card-body mx-auto">
+        <div>
+          <label for="post-title">TITLE</label>
+          <input
+            type="text"
+            class="form-control mb-3"
+            id="new-post-title"
+            name="post-title"
+            size="50"
+            value="{{post.title}}"
+          />
+        </div>
+        <div class="py-2">
+          <label for="post-content">CONTENT</label>
+          <textarea
+            class="form-control"
+            rows="3"
+            name="post-content"
+          >{{post.content}}</textarea>
+        </div>
+        <div class="d-flex justify-content-center py-1">
+          <button
+            type="submit"
+            class="btn btn-lg btn-outline-secondary"
+            id="update-post-btn"
+          >UPDATE POST</button>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <button
+            type="submit"
+            class="btn btn-lg btn-outline-danger delete-post-btn"
+          > DELETE POST</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>

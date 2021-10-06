@@ -1,0 +1,97 @@
+body {
+    background-color: #88ad4c !important;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 300 !important;
+  }
+  
+  .header-border {
+    border-bottom-style: solid;
+    border-bottom-color: #70640b;
+  }
+  
+  #main-header {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  
+  #main-nav {
+    font-size: 0.8rem;
+  }
+  
+  .card {
+    width: 80%;
+    margin: 3px;
+  }
+  
+  #dashboard-cards {
+    width: 100%;
+  }
+  
+  #post-title {
+    background-color: #d6e173;
+    font-weight: 400;
+    font-size: 1.05rem;
+  }
+  
+  #post-content {
+    background-color: #c9e088;
+    padding: 0.1rem 1.25rem;
+  }
+  
+  .btn-link {
+    text-decoration: none;
+    color: black !important;
+    font-size: 0.8rem !important;
+    font-weight: 300 !important;
+  }
+  
+  nav a {
+    vertical-align: middle;
+    color: black !important;
+  }
+  
+  #login-header {
+    padding: 0.5rem 1.25rem;
+    background-color: #037952;
+  }
+  
+  #login-btn {
+    width: 430px;
+  }
+  
+  #dashboard-container {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .comment {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .comment-form {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #comment-info {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  
+  #add-comment-btn {
+    width: 100%;
+  }
+  
+  #post-title {
+    border-bottom: none;
+  }
+  

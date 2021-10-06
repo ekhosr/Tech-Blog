@@ -1,0 +1,75 @@
+<div class="card justify-content-center" id="dashboard-cards">
+  <div class="card-header d-flex justify-content-between" id="post-title">
+    <a href="/dashboard/edit/{{id}}">{{title}}</a>
+    <div class="test">
+      <div>{{format_date created_at}}</div>
+    </div>
+  </div>
+  <div class="card-text">
+    <div id="post-content">
+      {{content}}
+
+      <button
+        type="button"
+        class="delete-review-btn"
+        id="user-{{user.id}} edit-{{id}}"
+      >DELETE</button>
+      <button
+        type="button"
+        class="btn btn-primary edit-review-btn"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
+        id="user-{{user.id}} edit-{{id}}"
+        value="{{content}}"
+      >EDIT</button>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <textarea
+                class="form-control"
+                rows="3"
+                id="edit-post-content"
+              >{{content}}</textarea>
+
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+                name="save-btn-modal"
+                id="user-{{user.id}} edit-{{id}}"
+              >SAVE</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+></script>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+></script>
