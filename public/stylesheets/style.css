@@ -1,12 +1,12 @@
 body {
-    background-color: #88ad4c !important;
+    background-color: #8ad5df77 !important;
     font-family: "Roboto", sans-serif !important;
     font-weight: 300 !important;
   }
   
   .header-border {
     border-bottom-style: solid;
-    border-bottom-color: #70640b;
+    border-bottom-color: #3d55beb9;
   }
   
   #main-header {
@@ -28,13 +28,13 @@ body {
   }
   
   #post-title {
-    background-color: #d6e173;
+    background-color: #357ec2;
     font-weight: 400;
     font-size: 1.05rem;
   }
   
   #post-content {
-    background-color: #c9e088;
+    background-color: #87b6d1;
     padding: 0.1rem 1.25rem;
   }
   
@@ -52,7 +52,7 @@ body {
   
   #login-header {
     padding: 0.5rem 1.25rem;
-    background-color: #037952;
+    background-color: #2049f096;
   }
   
   #login-btn {
